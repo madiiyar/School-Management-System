@@ -63,6 +63,10 @@ namespace School_Management_System
                         {
                             MessageBox.Show("Login Successfully  ", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                            mainForm main = new mainForm();
+                            main.Show();
+                            this.Hide();
+
                         }
                         else
                         {

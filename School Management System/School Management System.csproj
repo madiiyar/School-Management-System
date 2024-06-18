@@ -46,6 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddStudentData.cs" />
+    <Compile Include="AddStudentsForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddStudentsForm.Designer.cs">
+      <DependentUpon>AddStudentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeachersData.cs" />
+    <Compile Include="AddTeachersForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddTeachersForm.Designer.cs">
+      <DependentUpon>AddTeachersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,8 +86,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddStudentsForm.resx">
+      <DependentUpon>AddStudentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeachersForm.resx">
+      <DependentUpon>AddTeachersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="welcomeForm.resx">
       <DependentUpon>welcomeForm.cs</DependentUpon>
@@ -95,7 +127,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Student_Directory\" />
+    <Folder Include="Teacher_Directory\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\icons8_dashboard_35px_1.png" />
     <Content Include="Assets\icons8_dashboard_50px_2.png" />
